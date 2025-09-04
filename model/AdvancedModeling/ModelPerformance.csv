@@ -1,5 +1,5 @@
-Model,Train accuracy,Train precision,Train recall,Train f1 score,Train auc,Test accuracy,Test precision,Test recall,Test f1 score,Test auc
-Logistic Regression,0.7929,0.7217,0.7186,0.7202,0.8525,0.8022,0.7788,0.7297,0.7535,0.869
-Random Forest,0.8716,0.8953,0.7403,0.8104,0.9312,0.806,0.8172,0.6847,0.7451,0.8646
-XGBoost,0.9037,0.9254,0.8052,0.8611,0.9631,0.8134,0.7961,0.7387,0.7664,0.8542
-SVM,0.8475,0.8864,0.6753,0.7666,0.8878,0.7985,0.8202,0.6577,0.73,0.8176
+Model,Train Accuracy,Train Precision,Train Recall,Train F1-Score,Test Accuracy,Test Precision,Test Recall,Test F1-Score
+Logistic Regression,0.7929,0.7217,0.7186,0.7202,0.8022,0.7788,0.7297,0.7535
+Random Forest,0.8716,0.8953,0.7403,0.8104,0.806,0.8172,0.6847,0.7451
+XGBoost,0.9037,0.9254,0.8052,0.8611,0.8134,0.7961,0.7387,0.7664
+SVM,0.8475,0.8864,0.6753,0.7666,0.7985,0.8202,0.6577,0.73
