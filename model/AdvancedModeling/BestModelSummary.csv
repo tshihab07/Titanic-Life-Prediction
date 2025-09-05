@@ -1,15 +1,15 @@
-0
-XGBoost
-0.8427
-0.0352
-0.8134
-0.7664
-0.8542
-0.0903
-0.8536
-0.0903
-0.1293
-0.0665
-0.0948
-0.109
-Low
+,0
+Model,XGBoost
+CV Mean,0.8427
+CV Std,0.0352
+Test Accuracy,0.8134
+Test F1-Score,0.7664
+Test AUC,0.8542
+Overfitting Gap,0.0903
+Composite Score,0.8536
+Accuracy Gap,0.0903
+Precision Gap,0.1293
+Recall Gap,0.0665
+F1-Score Gap,0.0948
+AUC Gap,0.109
+Overfitting Status,Low
