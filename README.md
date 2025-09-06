@@ -5,14 +5,15 @@ A comprehensive machine learning project to predict passenger survival on the RM
 ## 📌 Table of Contents
 
 - [Project Overview](#project-overview)
-- [Dataset Flow](#dataset-flow)
+- [Data Flow](#data-flow)
+    - [Dataset Description](#dataset-description)
+    - [Project Workflow](#project-workflow)
 - [Key Features](#key-features)
 - [Model Overview](#model-overview)
     - [Result](#results)
     - [Model Performance Report](#best-model-performance-summary-xgboost)
 - [File Structure](#file-structure)
 - [Modeling Pipeline](#modeling-pipeline)
-- [Results](#results)
 - [Dependencies](#dependencies)
 - [Installation](#installation)
 - [Usage](#usage)
@@ -27,9 +28,22 @@ This project aims to develop and evaluate machine learning models capable of pre
 
 ---
 
-## Dataset Flow
+## Data Flow
 
-The project workflow for handling data is as follows:
+### Dataset Description
+| Column Name   | Data Type     | Description                                                                         |
+| ------------- | ------------- | ----------------------------------------------------------------------------------- |
+| `survived`    | int (0 or 1)  | Survival status (0 = No, 1 = Yes)                                                   |
+| `pclass`      | int (1, 2, 3) | Ticket class (1 = 1st, 2 = 2nd, 3 = 3rd)                                            |
+| `sex`         | category      | Gender of the passenger (`male` or `female`)                                        |
+| `fare`        | float         | Passenger fare (in British Pounds)                                                  |
+| `who`         | category      | Person type (`man`, `woman`, `child`)                                               |
+| `adult_male`  | bool          | Whether the passenger is an adult male (`True` or `False`)                          |
+| `embark_town` | category      | Name of town where the passenger boarded (`Cherbourg`, `Queenstown`, `Southampton`) |
+| `alone`       | bool          | Whether the passenger was alone (no family aboard)                                  |
+
+
+### Project Workflow
 
 1. **Data Loading**: The cleaned dataset `data/titanic_clean.csv` is loaded into a Pandas DataFrame.
 2. **Data Splitting**: The dataset is split into training (70%) and testing (30%) sets using a fixed random state for reproducibility.
@@ -157,6 +171,7 @@ TitanicSurvivalPrediction/
 ├── README.md                         # Project documentation
 ├── requirements.txt                  # Project dependencies
 └── LICENSE                           # License information
+└── titanic_inference.py              # Model Inference
 ```
 
 ---
