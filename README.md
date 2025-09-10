@@ -26,7 +26,6 @@ A comprehensive machine learning project to predict passenger survival on the RM
 
 This project aims to develop and evaluate machine learning models capable of predicting the survival of passengers aboard the RMS Titanic. By analyzing a dataset of passenger demographics, travel class, and other factors, we build predictive models to understand the key characteristics influencing survival chances. The project emphasizes a production-ready approach, including robust data preprocessing, feature engineering, hyperparameter optimization, comprehensive model evaluation, and a deployable inference pipeline.
 
----
 
 ## Data Flow
 
@@ -50,7 +49,6 @@ This project aims to develop and evaluate machine learning models capable of pre
 3. **Feature Scaling**: Numerical features are standardized using `StandardScaler` for models that are sensitive to feature magnitude (Logistic Regression, SVM). Scaling is applied separately to training and testing sets to prevent data leakage.
 4. **Model Input**: Preprocessed training data is used for model training and hyperparameter tuning. Preprocessed testing data is reserved for the final, unbiased evaluation of the selected model.
 
----
 
 ## Key Features
 
@@ -65,7 +63,6 @@ This project aims to develop and evaluate machine learning models capable of pre
     - A complete prediction pipeline function (`predict_survival`) is provided for easy inference on new data.
     - A sample standalone inference script (`titanic_inference.py`) is generated for deployment.
 
----
 
 ## Model Overview
 - Among the evaluated models, **XGBoost** achieved the highest composite score with strong test accuracy, balanced F1-score, and robust calibration.
@@ -108,8 +105,6 @@ Based on comprehensive evaluation using a composite scoring system (30% CV Mean,
 | AUC Gap            | 0.109  |
 | Overfitting Status | Low    |
 
-
----
 
 ## File Structure
 ```bash
@@ -174,7 +169,6 @@ TitanicSurvivalPrediction/
 └── titanic_inference.py              # Model Inference
 ```
 
----
 
 ## Modeling Pipeline
 
@@ -196,7 +190,6 @@ TitanicSurvivalPrediction/
     - Save the best model object, the scaler, and the list of feature names.
     - Create and save the `predict_survival` function and a sample `titanic_inference.py` script.
 
----
 
 ## Dependencies
 
@@ -240,7 +233,6 @@ pip install -r requirements.txt
 
 **Prepare Data**: Ensure the `data/titanic_clean.csv` file is placed in the `data/` directory.
 
----
 
 ## Usage
 
@@ -254,7 +246,6 @@ Modify the sample data in `titanic_inference.py` or create your own script using
 python titanic_inference.py
 ```
 
----
 
 ## Future Improvement
 
@@ -263,10 +254,9 @@ Potential areas for enhancing the model's performance and robustness:
 - **Advanced Hyperparameter Tuning**: Explore more sophisticated techniques like Bayesian Optimization (e.g., Optuna, Hyperopt) for potentially better parameter configurations.
 - **Ensemble Methods**: Combine predictions from the top-performing models (e.g., Voting Classifier, Stacking) to potentially improve accuracy and robustness.
 - **In-Depth Error Analysis**: Perform a detailed investigation into misclassified instances to understand model weaknesses and guide further feature engineering.
-- **Model Interpretability (SHAP)**: Integrate SHAP (SHapley Additive exPlanations) values for more detailed, instance-level explanations of model predictions.
+- **Model Interpretability (SHAP)**: Integrate SHAP (Shapley Additive exPlanations) values for more detailed, instance-level explanations of model predictions.
 - **Learning Curve Analysis**: Generate learning curves to diagnose if the model would benefit from more training data.
 
----
 
 ## Contributing
 
@@ -278,7 +268,6 @@ Contributions are welcome! Please feel free to submit a pull request.
 - Push
 - Open a Pull Request
 
----
 
 ## Contact
 
@@ -286,7 +275,6 @@ E-mail: tushar.shihab13@gmail.com <br>
 More Projects: 👉🏿 [Projects](https://github.com/tshihab07?tab=repositories)<br>
 LinkedIn: [Tushar Shihab](https://www.linkedin.com/in/tshihab07/)
 
----
 
 ## License
 
